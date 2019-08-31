@@ -1,0 +1,2 @@
+# PageStatic
+Simple Page Static
