@@ -57,28 +57,28 @@
 }
 
 .content-navigation{
-    /*display: none;*/
     position: fixed;
-    top: 0;
-    transform: translateX(50%);
-    /*left: 0;*/
-    /*right: -100%;*/
-    margin-top: calc(var(--tam-logo) + var(--padding-header-tb) * 2 + 1px);
-    width: 100%;
-    background-color: var(--color-first);
-    height: 100vh;
+    transform: translateX(100%);
+    top: calc(var(--tam-logo) + var(--padding-header-tb) * 2 + 1px);
+    width: 50%;
+    height: calc(100vh - var(--tam-logo) + var(--padding-header-tb) * 2 + 1px);
+    /*right: 0;*/
     overflow: auto;
+    background-color: var(--color-first);
     z-index:var(--z-fixed);
     transition: transform .2s ease-in-out;
 }
 
 .active{
-    transform: initial;
+    transform: translateX(0%);
 }
 
 .menu-navigation{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    overflow: auto;
+    max-height: calc(100vh - 81px);
+    /*max-height: calc( 100vh - 49px);*/
 }
 
 li a{
@@ -214,6 +214,9 @@ li a{
         height: 100%;
         background-color: var(--body-bg);
         transform: initial;
+        transition: none;
+        overflow: initial;
+        width: 100%;
     }
 
     .menu-navigation{
@@ -246,16 +249,8 @@ li a{
         --width-img-user : 128px;
     }
 
-    
-
     .publicaciones-title{
         padding: 3rem 0;
     }
-
-
-    /
-
-
-
 
 }
