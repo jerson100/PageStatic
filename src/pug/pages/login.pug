@@ -1,0 +1,24 @@
+extends ../config/templateAbstract
+
+block metadata
+
+append styles
+    link(rel="stylesheet" href="/css/pages/login/login.css")
+    link(rel="stylesheet" href="/css/components/formulario.css")
+
+block main
+    main.container-allPage
+        .allPage-contains
+            .allPage_header
+                p.small.text-right Inicia sesión
+            .allPage_main 
+                form
+                    .form-item
+                        label(for="username") Username:
+                        input(type="text" id="username" name="username")
+                    .form-item
+                        label(for="pass") Password:
+                        input(type="password" id="password" name="password")
+                    .form-item
+                        input(type="submit" class="button center-button" value="Ingresar")    
+            .allPage_footer

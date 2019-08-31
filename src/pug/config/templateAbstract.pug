@@ -1,0 +1,35 @@
+block config
+    include variables
+doctype html
+html(lang="es")
+    head
+        title= pageTitle
+        meta(charset="utf-8")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        block metadata
+            meta(name="twitter:card" content="summary_large_image")
+            meta(name="twitter:site" content=twitterAccount)
+            meta(property="og:title" content=pageTitle)
+            meta(property="og:description" content=pageDescription)
+            meta(property="og:image" content=pageImage)
+        block styles
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:700")
+            link(rel="shortcut icon" href="/img/svg/logo.svg")
+            link(rel="stylesheet" href="/css/base/base.css")
+            link(rel="stylesheet" href="/css/theme/colors.css")
+            link(rel="stylesheet" href="/css/theme/typography.css")
+            link(rel="stylesheet" href="/css/theme/fonts.css")
+            link(rel="stylesheet" href="/css/layout/layout.css")
+            link(rel="stylesheet" href="/css/components/buttons.css")
+            
+    body
+
+        block header
+
+        block banner
+
+        block main
+
+        block footer
+
+        block scripts  

@@ -1,0 +1,47 @@
+extends ../config/template.pug
+
+include ../mixins/card.pug
+
+append config
+    - pageTitle = "Perfil"
+
+append metadata
+
+append styles
+    link(rel="stylesheet" href="/css/pages/perfil/perfil.css")
+
+block header
+    include ../includes/header
+
+block banner
+    div.user-banner-portada
+        img(src="https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-07/banner%20%284%29.jpg" alt="imagen de portada")
+
+block main
+    .je-container.main
+        section.je-item.section-user
+            .user-dat.user-img
+                img(src="/img/jpg/yop.jpg" alt="Yo")
+            .user-dat.user-name
+                h1.t3.grey-color-dark.color Jerson Ramírez Ortiz
+            .user-dat.user-email
+                p juamkoo@gmail.com
+            .user-dat.user-description
+                p.small Me gusta mucho la programación Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas saepe animi aut quisquam reiciendis dolores illum recusandae veniam ducimus, voluptate facilis consequuntur minus. Enim officiis sed est, magni assumenda voluptas!
+            .user-dat.user-country
+                p.small 
+                    span P 
+                        span Hural, Perú
+            .user-dat.user-social
+                .user-social_web
+                    a(href="" class="smaller")
+                        span jersonramirez.epizy.com
+                .user-red-social
+                    span F G
+            button.user-dat.button.ghost cambiar contraseña
+            button.user-dat.button Editar
+        section.je-item.section-publicaciones
+            h1.t3.publicaciones-title Publicaciones
+            .container-publicaciones
+                +card("/img/jpg/yop.jpg")
+                +card("https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-07/banner%20%284%29.jpg")
