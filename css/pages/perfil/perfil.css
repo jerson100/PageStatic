@@ -1,0 +1,252 @@
+/*
+====================HEADER====================
+*/
+:root{
+    --tam-logo: 2rem;
+    --padding-header-tb:.5rem;
+    --width-img-user: 110px;
+}
+
+.main-header{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: solid 1px var(--border-color);
+    z-index:var(--z-fixed);
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+}
+
+.container-navigation,
+.container-logo{
+    width: 50%;
+}
+
+.logo{display: inline-block;}
+
+.main-header img{
+    height: 2rem;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/*
+    Header right
+*/
+
+.icon-menu-container{
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.icon-menu{
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.icon-menu::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px #53575A inset, 0 8px white inset, 0 12px #53575A inset, 0 16px white inset, 0 20px #53575A inset;
+}
+
+.content-navigation{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: calc(var(--tam-logo) + var(--padding-header-tb) * 2 + 1px);
+    width: 100%;
+    background-color: var(--color-first);
+    height: 100vh;
+    overflow: auto;
+    z-index:var(--z-fixed);
+}
+
+.menu-navigation{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+li a{
+    display: block;
+    padding: 1rem 0;
+    color: var(--light-color);
+}
+
+
+.container-perfil{
+    display: flex;
+    align-items: center;
+}
+
+.container-perfil img{
+    border-radius: 50%;
+}
+
+.icon-flecha{
+    height: 1rem;
+    padding-left: .4rem;
+}
+
+
+
+/*
+====================FIN HEADER====================
+*/
+
+
+/**********************Banner*******************/
+.user-banner-portada{
+    height: 14rem;
+    width: 100%;
+    position: relative;
+    margin-top: calc(var(--tam-logo) + var(--padding-header-tb) * 2 + 1px);
+}
+
+.user-banner-portada img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/**********************Fin-Banner*******************/
+
+
+/*********************SECCIÓN USER********************/
+.section-user{
+    position: relative;
+    top: calc(var(--width-img-user) / 2 * -1);
+}
+.section-user img{
+    width: var(--width-img-user);
+    height: var(--width-img-user);
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 5px white;
+}
+
+.user-dat{
+    margin-bottom: .5rem;
+}
+/*******************FIN SECCIÓN USER********************/
+
+/*
+    Publicaciones
+*/
+
+.img-container img{
+    margin: 0 auto;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+}
+
+.section-publicaciones{
+    text-align: center;
+    border-left: solid 1px var(--border-color);
+}
+
+.publicaciones-title{
+    padding: 1.3rem 0;
+}
+
+.title,.fechaP{
+    padding: 1rem;
+}
+
+.card-foto{
+    margin-bottom: 1.5rem;
+    padding: 2rem 0;
+}
+
+/*
+    Fin publicaciones
+*/
+
+
+.main a{
+    color: var(--second-color);
+}
+
+/*RESPONSIVE*/
+ 
+/*Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+   @media (min-width: 768px) {
+    .section-user{
+        width: 40%;
+    }
+
+    .section-publicaciones{
+        width: 60%;
+    }
+   }
+
+
+/*Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+   @media (min-width: 1200px) { }
+
+ 
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px){
+    
+    .content-navigation{display: block;}
+
+    .icon-menu-container{display: none;}
+
+    .content-navigation{
+        margin-top: 0;
+        position: initial;
+        height: 100%;
+        background-color: var(--body-bg);
+    }
+
+    .menu-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        height: inherit;
+    }
+
+    li a{
+        padding: 0;
+        color: var(--color-text);
+    }
+
+
+    /************Banner************/
+    .user-banner-portada{
+        height: 16rem;
+    }
+
+
+    .main{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*User*/
+    .section-user{
+        --width-img-user : 128px;
+    }
+
+    
+
+    .publicaciones-title{
+        padding: 3rem 0;
+    }
+
+
+
+
+
+}
