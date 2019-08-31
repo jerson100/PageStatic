@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/layout/layout.css">
     <link rel="stylesheet" href="/css/components/buttons.css">
     <link rel="stylesheet" href="/css/pages/perfil/perfil.css">
+    <script src="/js/toogle.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -25,9 +26,9 @@
         <div class="je-item container-logo"><a class="logo" href="/"><img src="/img/svg/logo.svg" alt="logo de la página"></a></div>
         <div class="je-item container-navigation">
           <div class="je-container icon-menu-container">
-            <div class="icon-menu"></div>
+            <div class="icon-menu" id="icon"></div>
           </div>
-          <nav class="content-navigation">
+          <nav class="content-navigation" id="navigation">
             <ul class="menu-navigation je-item">
               <li><a href="/">Inicio</a></li>
               <li><a href="/html/lenguajes">Lenguajes</a></li>
@@ -91,6 +92,7 @@
         <div class="je-item"></div>
       </div>
     </footer>
-    <script src="assets/js/scripts-min.js"></script>
+    <script src="/js/scripts-min.js"></script>
+    <script>toogleButton('icon','navigation','active')</script>
   </body>
 </html>

@@ -5,8 +5,8 @@ header.main-header
                 img(src="/img/svg/logo.svg" alt="logo de la página")
         div(class="je-item container-navigation")
             div.je-container.icon-menu-container
-                .icon-menu
-            nav.content-navigation
+                .icon-menu#icon
+            nav.content-navigation#navigation
                 ul.menu-navigation.je-item
                     for obj in pages
                         li: a(href=`${obj.url}`)= obj.title

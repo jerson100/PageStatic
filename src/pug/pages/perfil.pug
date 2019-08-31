@@ -9,6 +9,7 @@ append metadata
 
 append styles
     link(rel="stylesheet" href="/css/pages/perfil/perfil.css")
+    script(src="/js/toogle.js")
 
 block header
     include ../includes/header
@@ -45,3 +46,8 @@ block main
             .container-publicaciones
                 +card("/img/jpg/yop.jpg")
                 +card("https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-07/banner%20%284%29.jpg")
+
+append scripts
+    script.
+        toogleButton('icon','navigation','active')
+

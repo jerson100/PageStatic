@@ -57,16 +57,23 @@
 }
 
 .content-navigation{
-    display: none;
+    /*display: none;*/
     position: fixed;
     top: 0;
-    left: 0;
+    transform: translateX(50%);
+    /*left: 0;*/
+    /*right: -100%;*/
     margin-top: calc(var(--tam-logo) + var(--padding-header-tb) * 2 + 1px);
     width: 100%;
     background-color: var(--color-first);
     height: 100vh;
     overflow: auto;
     z-index:var(--z-fixed);
+    transition: transform .2s ease-in-out;
+}
+
+.active{
+    transform: initial;
 }
 
 .menu-navigation{
@@ -79,7 +86,6 @@ li a{
     padding: 1rem 0;
     color: var(--light-color);
 }
-
 
 .container-perfil{
     display: flex;
@@ -207,6 +213,7 @@ li a{
         position: initial;
         height: 100%;
         background-color: var(--body-bg);
+        transform: initial;
     }
 
     .menu-navigation{
@@ -245,6 +252,8 @@ li a{
         padding: 3rem 0;
     }
 
+
+    /
 
 
 
