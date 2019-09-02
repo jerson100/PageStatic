@@ -146,6 +146,7 @@ li a{
 */
 
 .container-publicaciones{
+    padding-top: 3rem;
 }
 
 .group-post{
@@ -176,7 +177,7 @@ li a{
 
 .container-card{
     margin-bottom: 2rem;
-    border: solid 1px red;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 
 .card-article{
