@@ -146,9 +146,23 @@ li a{
 */
 
 .container-publicaciones{
+}
+
+.group-post{
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card-img-post{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.group-date{
+    display: none;
 }
 
 /*
@@ -160,9 +174,26 @@ li a{
 ---------------------Card---------------------
 */
 
+.container-card{
+    margin-bottom: 2rem;
+    border: solid 1px red;
+}
+
+.card-article{
+    border: solid 1px black;
+}
+
+/*header*/
 .card_header img{
     max-width: 100%;
 }
+
+/*footer*/
+.card_autor_img{
+    width: 40px;
+    border-radius: 50%;
+}
+
 
 /*RESPONSIVE*/
  
@@ -182,5 +213,17 @@ li a{
    ------------------------------------------------------------------------- */
 @media screen and (min-width: 1024px){
     
+    .main{
+        flex-wrap: nowrap;
+    }
+
+    .section-user{
+        flex-basis: 40%;
+        flex-grow: 0;
+    }
+
+    .section-publicaciones{
+        flex-grow: 1;
+    }
 
 }
