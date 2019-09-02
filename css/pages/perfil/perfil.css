@@ -78,7 +78,6 @@
     padding-bottom: 1rem;
     overflow: auto;
     max-height: calc(100vh - 81px);
-    /*max-height: calc( 100vh - 49px);*/
 }
 
 li a{
@@ -141,164 +140,36 @@ li a{
     border-radius: 50%;
     border: solid 5px white;
 }
-/*
-.user-dat{
-    margin-bottom: .5rem;
-}
-/*******************FIN SECCIÓN USER********************/
 
 /*
-    Publicaciones
+-------------SECCIÓN PUBLICACIONES-----------
 */
+
+.container-publicaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*
-.section-publicaciones{
-    text-align: center;
-    padding-left: 2rem;
-}
+-------------FIN SECCIÓN PUBLICACIONES-----------
+*/
 
-.title_publicaciones{
-    margin-bottom: 3rem;
-    padding: 1rem 0;
-}
 
-/*--------------CARD--------------*/
 /*
-.container-card{
-    padding-left: 2rem;
-}
-
-.card_article{
-    position: relative;
-    box-shadow: 0 2px 16px -2px rgba(0, 0, 0, 0.15);
-    background: #fff;
-    border-radius: 0.25rem;
-    margin-bottom: 5rem;
-}
-
-/*card-header*//*
-.card_header a{
-    display: inline-block;
-}
-
-.card_title{
-    padding: .5rem;
-}
+---------------------Card---------------------
+*/
 
 .card_header img{
     max-width: 100%;
-    vertical-align: middle;
 }
-
-.card_footer{
-    padding: .5rem;
-}
-
-/*card-footer*//*
-.card_autor_img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: .5rem;
-}
-
-.card_footer_container{
-    justify-content: space-between;
-}
-
-.card_footer_autor, 
-.card_footer_fecha{
-    display: flex;
-    align-items: center;
-}
-
-
-/*---------FIN-CARD---------*/
-/*
-.linea{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.linea::after {
-    content: '';
-    width: 2px;
-    background-color: #058ecd;
-    position: absolute;
-    top: 2rem;
-    bottom: 0;
-    left: calc(50% - 1px + 1rem);
-    z-index: -1;
-}
-
-.linea::before {
-    content: '';
-    position: absolute;
-    width: calc( 50% + 1rem);
-    left: 0;
-    bottom: 0;
-    background: #058ecd;
-    height: 2px;
-}
-
-.group-publicacion{
-    position: relative;
-    margin-bottom: 6rem;
-    padding-top: 2rem;
-}
-
-.group-publicacion::after {
-    content: '';
-    position: absolute;
-    border: solid 1px #058ecd;
-    left: 0;
-    bottom: 0;
-    width: 30px;
-}
-
-.group-publicacion::before {
-    content: '';
-    border: solid 1px #058ecd;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-}
-
-.group-date{
-    display: flex;
-    color:#058ecd;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -50px;
-    left: -25px;
-    border-radius: 5px;
-    border: solid .1rem #058ecd;
-}
-
-/*
-    Fin publicaciones
-*/
 
 /*RESPONSIVE*/
  
 /*Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- */
    @media (min-width: 768px) {
-    /*.section-user{
-        width: 40%;
-    }
-
-    .section-publicaciones{
-        width: 60%;
-        padding-left: 1rem;
-    }*/
+   
    }
 
 
@@ -310,55 +181,6 @@ li a{
 /* Tablets en horizonal y escritorios normales
    ------------------------------------------------------------------------- */
 @media screen and (min-width: 1024px){
-    /*
-    .content-navigation{display: block;}
-
-    .icon-menu-container{display: none;}
-
-    .content-navigation{
-        margin-top: 0;
-        position: initial;
-        height: 100%;
-        background-color: var(--body-bg);
-        transform: initial;
-        transition: none;
-        overflow: initial;
-        width: 100%;
-    }
-
-    .menu-navigation{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0;
-        height: inherit;
-    }
-
-    li a{
-        padding: 0;
-        color: var(--color-text);
-    }
-
-
-    /************Banner************/
-    /*.user-banner-portada{
-        height: 16rem;
-    }
-
-
-    .main{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    /*User*/
-    /*.section-user{
-        --width-img-user : 128px;
-    }
-
-    .card_header img,
-    .card_autor_img{
-        cursor: pointer;
-    }*/
+    
 
 }
