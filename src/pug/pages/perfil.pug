@@ -36,16 +36,40 @@ block main
             .user-dat.user-social
                 .user-social_web
                     a(href="" class="smaller")
-                        span jersonramirez.epizy.com
+                        span: a(href="#") jersonramirez.epizy.com
                 .user-red-social
                     span F G
             button.user-dat.button.ghost cambiar contraseña
             button.user-dat.button Editar
+            button.user-dat.button.ghost Publicar
         section.je-item.section-publicaciones
-            h1.t3.publicaciones-title Publicaciones 2019
+            .title_publicaciones
+                h1.t3 Publicaciones
             .container-publicaciones
-                +card("/img/jpg/yop.jpg")
-                +card("https://drupal.ed.team/sites/default/files/imagenes-cdn-edteam/2019-07/banner%20%284%29.jpg")
+                .group-publicacion
+                    .linea
+                        +card("http://lorempixel.com/300/200/")
+                        +card("http://lorempixel.com/800/400/")
+                    .group-date
+                        span.small 2019
+                        span.small 02/09      
+                .group-publicacion
+                    .linea
+                        +card("/img/jpg/yop.jpg")
+                        +card("http://lorempixel.com/300/200/")
+                        +card("http://lorempixel.com/800/400/")
+                        +card("http://lorempixel.com/500/300/")
+                        +card("http://lorempixel.com/300/300/")
+                        +card("http://lorempixel.com/1800/1800/")
+                    .group-date
+                        span.small 2019
+                        span.small 27/08
+                .group-publicacion
+                    .linea
+                        +card("http://lorempixel.com/300/200/")
+                    .group-date
+                        span.small 2019
+                        span.small 20/08  
 
 append scripts
     script.

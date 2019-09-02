@@ -1,9 +1,17 @@
 mixin card(src)
-    article.card-foto
-        .img-container
-            img(src=src, alt="")
-        .description
-            .title
-                h1.t4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis iure commodi officia sit dignissimos dicta doloremque ullam natus voluptas cum dolor molestias nesciunt aspernatur alias eum hic possimus. Obcaecati?
-            span.fechaP 20/06/2019
+    .container-card
+        article.card_article
+            header(class="card_header")
+                h3(class="card_title t4")
+                    a(href="/html/ejercicios_basicos/ejercicio1.html") Title ♥
+                a(href="/html/ejercicios_basicos/ejercicio1.html")
+                    img(src=src alt="Hallar la suma de n números")
+            footer(class="card_footer")
+                div(class="je-container card_footer_container")
+                    div(class="card_footer_autor")
+                        img(class="card_autor_img" src="/img/jpg/yop.jpg" alt="Jerson Ramírez")
+                        a(class="underline small" href="/html/jerson.html")     Jerson Ramírez
+                    div(class="card_footer_fecha")
+                        span.small 24/09/2018 
+        
             
