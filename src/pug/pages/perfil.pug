@@ -9,8 +9,9 @@ append metadata
 
 append styles
     link(rel="stylesheet" href="/css/pages/perfil/perfil.css")
+    link(rel="stylesheet" href="/css/components/modal.css")
     script(src="/js/toogle.js")
-
+    
 block header
     include ../includes/header
 
@@ -42,7 +43,7 @@ block main
             button.user-dat.button.ghost cambiar contraseña
             button.user-dat.button Editar
             button.user-dat.button.ghost Publicar
-        section.je-item.section-publicaciones
+        section.je-item.section-publicaciones#publicaciones
             .title_publicaciones
                 h1.t3 Publicaciones
             .container-publicaciones
@@ -74,4 +75,5 @@ block main
 append scripts
     script.
         toogleButton('icon','navigation','active')
+    script(src="/js/modal.js")    
 

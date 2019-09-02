@@ -356,4 +356,9 @@ li a{
         --width-img-user : 128px;
     }
 
+    .card_header img,
+    .card_autor_img{
+        cursor: pointer;
+    }
+
 }
